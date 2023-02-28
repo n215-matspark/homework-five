@@ -1,0 +1,721 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.site-wrapper {
+  max-width: 1280px;
+  min-height: 500px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1265px) {
+  .bookings {
+    min-height: 900px;
+  }
+  .bookings .form .two-input {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .bookings .form .two-input input {
+    min-width: 100%;
+  }
+  .bookings .form .three-inputs-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .bookings .form .three-inputs-container .three-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+  .bookings .form .single-line-input-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bookings .form .single-line-input-holder .large-input {
+    max-width: 84%;
+    min-height: 58px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about-container {
+    width: 90%;
+  }
+  .about-container .about-text .about-text-h1 {
+    min-width: 15.784693877%;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  .nav-container nav {
+    max-width: 90%;
+  }
+  .nav-container nav ul {
+    display: flex;
+  }
+  .content-wrapper {
+    width: 100%;
+  }
+  .content-wrapper .tour-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .bookings {
+    min-height: 900px;
+  }
+  .bookings .form .two-input {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .bookings .form .two-input input {
+    min-width: 100%;
+  }
+  .bookings .form .three-inputs-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .bookings .form .three-inputs-container .three-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+  .bookings .form .single-line-input-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bookings .form .single-line-input-holder .large-input {
+    max-width: 84%;
+    min-height: 58px;
+  }
+}
+@media screen and (max-width: 1005px) {
+  .about-container .about-text .about-text-h1 {
+    min-width: 140px;
+  }
+  .bookings .form .three-inputs-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .bookings .form .three-inputs-container .three-inputs label {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "GillSans-L", sans-serif;
+    font-size: 18px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .small-input {
+    width: 98px;
+    min-height: 55px;
+    padding: 0 12px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content-wrapper {
+    width: 100%;
+  }
+  .content-wrapper .tour-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .bookings {
+    min-height: 900px;
+  }
+  .bookings .form .two-input {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .bookings .form .two-input input {
+    min-width: 100%;
+  }
+  .bookings .form .three-inputs-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .bookings .form .three-inputs-container .three-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .bookings .form .three-inputs-container .three-inputs label {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "GillSans-L", sans-serif;
+    font-size: 18px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .small-input {
+    width: 76px;
+    min-height: 48px;
+    padding: 0 12px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 22px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+  .bookings .form .single-line-input-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bookings .form .single-line-input-holder .large-input {
+    max-width: 82%;
+    min-height: 58px;
+  }
+}
+@font-face {
+  font-family: "GillSans";
+  src: url(../css/fonts/GillSans.otf) format("opentype");
+}
+@font-face {
+  font-family: "Proxima";
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GillSans-ital";
+  src: url(../css/fonts/GillSansItalic.otf) format("opentype");
+}
+@font-face {
+  font-family: "GillSans-L";
+  src: url(../css/fonts/GillSansLight.otf) format("opentype");
+}
+.nav-container {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}
+.nav-container .nav2 {
+  width: 980px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  border-bottom: solid #000000 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .nav2 .icon {
+  height: 42px;
+  width: 92px;
+  text-decoration: none;
+}
+.nav-container .nav2 .menu-options {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-container .nav2 .menu-options ul {
+  list-style-type: none;
+  text-align: center;
+}
+.nav-container .nav2 .menu-options ul li {
+  display: inline-block;
+  padding: 0px 19.5px;
+  border-right: solid #79addc 1px;
+  line-height: 100%;
+}
+.nav-container .nav2 .menu-options ul li:last-child {
+  border-right: none;
+}
+.nav-container .nav2 .menu-options ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "GillSans", sans-serif;
+  font-size: 15px;
+}
+.nav-container nav {
+  width: 980px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  border-bottom: solid #FFFFFF 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container nav .icon {
+  height: 42px;
+  width: 92px;
+  text-decoration: none;
+}
+.nav-container nav .menu-options {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-container nav .menu-options ul {
+  list-style-type: none;
+  text-align: center;
+}
+.nav-container nav .menu-options ul li {
+  display: inline-block;
+  padding: 0px 19.5px;
+  border-right: solid #79addc 1px;
+  line-height: 100%;
+}
+.nav-container nav .menu-options ul li:last-child {
+  border-right: none;
+}
+.nav-container nav .menu-options ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "GillSans", sans-serif;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #79addc;
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-background {
+  min-width: 76.5625%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-background .footer-bottom {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-background .footer-bottom .footer-links {
+  width: 100%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-background .footer-bottom .footer-links div p {
+  font-size: 12px;
+  font-family: "GillSans", sans-serif;
+  color: #FFFFFF;
+  margin-top: 7%;
+}
+
+.home .hero {
+  max-width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(50, 50, 50, 0.4)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home .hero .hero-text {
+  height: 300px;
+  max-width: 32.8125%;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+.home .hero .hero-text ul {
+  text-align: center;
+  list-style-type: none;
+}
+.home .hero .hero-text ul h3 {
+  font-family: "Proxima", sans-serif;
+  font-size: 60px;
+  padding: 8% 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.home .hero .hero-text ul p {
+  font-family: "GillSans-ital", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10%;
+}
+.home .hero .hero-text ul a {
+  font-family: "GillSans", sans-serif;
+  background-color: #79addc;
+  padding: 11.2px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.tour-boxes {
+  background-color: #FFFFFF;
+  max-width: 63.90625%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -3%;
+}
+.tour-boxes .boxes {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(50, 50, 50, 0.5)), url(../images/tour/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.tour-boxes .boxes2 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(50, 50, 50, 0.5)), url(../images/tour/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.tour-boxes .boxes3 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(50, 50, 50, 0.5)), url(../images/tour/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.tour-boxes .boxes-text ul {
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.tour-boxes .boxes-text ul h3 {
+  padding-top: 15%;
+  font-family: "Proxima", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.tour-boxes .boxes-text ul p {
+  font-family: "Proxima", sans-serif;
+  font-size: 30px;
+  margin-top: -8%;
+  padding-bottom: 25%;
+}
+.tour-boxes .boxes-text ul a {
+  font-family: "GillSans", sans-serif;
+  background-color: #79addc;
+  padding: 11px 22px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.bookings {
+  max-width: 63.90625%;
+  height: 750px;
+  margin: 50px auto 100px auto;
+}
+.bookings h1 {
+  font-family: "Proxima", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+}
+.bookings .form input {
+  padding: 5px;
+  font-family: "GillSans-L", sans-serif;
+  font-size: 18px;
+  border: solid #79addc 2px;
+}
+.bookings .form .two-input {
+  max-height: 121px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.bookings .form .two-input input {
+  margin-bottom: 15px;
+}
+.bookings .form .two-input .left {
+  width: 344px;
+  min-height: 58px;
+}
+.bookings .form .two-input .right {
+  width: 453px;
+  min-height: 58px;
+  float: right;
+}
+.bookings .form .single-line-input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+.bookings .form .single-line-input-holder .large-input {
+  width: 698px;
+  min-height: 58px;
+  float: right;
+}
+.bookings .form .single-line-input-holder .icon {
+  font-size: 20px;
+  position: absolute;
+  right: 25px;
+}
+.bookings .form .single-line-input-holder label {
+  font-family: "GillSans-L", sans-serif;
+  font-size: 18px;
+}
+.bookings .form .three-inputs-container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.bookings .form .three-inputs-container .three-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.bookings .form .three-inputs-container .small-input {
+  max-width: 103px;
+  min-height: 58px;
+  padding: 0 20px;
+}
+.bookings .form .three-inputs-container .icon {
+  font-size: 28px;
+  position: absolute;
+  top: 16%;
+  right: 15px;
+}
+.bookings .form .three-inputs-container label {
+  padding-right: 50px;
+  font-family: "GillSans-L", sans-serif;
+  font-size: 18px;
+}
+.bookings .form .message-input {
+  min-height: 192px;
+  max-width: 818px;
+  margin-bottom: 20px;
+}
+.bookings .form .message-input textarea {
+  height: 192px;
+  width: 100%;
+  padding: 5px;
+  font-family: "GillSans-L", sans-serif;
+  font-size: 18px;
+  border: solid #79addc 2px;
+}
+.bookings .form .sumbit-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookings .form .sumbit-form a {
+  font-family: "GillSans", sans-serif;
+  background-color: #79addc;
+  padding: 1.4em 25.46em;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.bookings .form .sumbit-form input {
+  font-family: "GillSans", sans-serif;
+  background-color: #79addc;
+  height: 60px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.about-container {
+  max-width: 980px;
+  margin: 0 auto;
+  height: 1150px;
+}
+.about-container .about-text {
+  float: left;
+  margin-top: 20%;
+  display: block;
+}
+.about-container .about-text .about-text-h1 {
+  max-width: 15.784693877%;
+  height: 73px;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 1px;
+}
+.about-container .about-text .about-text-h1 h1 {
+  font-size: 60px;
+  font-family: "Proxima", sans-serif;
+  font-weight: 100;
+  letter-spacing: 4.38px;
+}
+.about-container .about-text p {
+  font-size: 16px;
+  font-family: "GillSans", sans-serif;
+  color: #000000;
+  margin-top: 4%;
+  letter-spacing: 1.5px;
+}
+.about-container .clients-container {
+  float: left;
+  margin-top: 10.1%;
+  display: inline;
+  max-width: 100%;
+}
+.about-container .clients-container .client-title {
+  max-width: 242px;
+  height: 49px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 1px;
+}
+.about-container .clients-container .client-title h1 {
+  font-size: 40px;
+  font-family: "Proxima", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3.7142px;
+}
+.about-container .clients-container .client-section1 {
+  margin-top: 5%;
+  max-width: 674px;
+  height: 170px;
+}
+.about-container .clients-container .client-section1 .client1 {
+  float: left;
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+}
+.about-container .clients-container .client-section1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.about-container .clients-container .client-section1 .client-text {
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-container .clients-container .client-section1 .client-text p {
+  font-family: "GillSans-ital", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+.about-container .clients-container .client-section1 .client-text span {
+  margin-left: 3%;
+  letter-spacing: 1.895px;
+  margin-top: 5.3%;
+  float: right;
+  font-family: "Proxima", sans-serif;
+  font-size: 20px;
+  color: #79addc;
+  font-weight: 100;
+}
+.about-container .clients-container .client-section2 {
+  margin-top: 5%;
+  max-width: 674px;
+  height: 170px;
+}
+.about-container .clients-container .client-section2 .client1 {
+  float: left;
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+}
+.about-container .clients-container .client-section2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.about-container .clients-container .client-section2 .client-text {
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-container .clients-container .client-section2 .client-text p {
+  font-family: "GillSans-ital", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+.about-container .clients-container .client-section2 .client-text span {
+  margin-left: 3%;
+  letter-spacing: 1.895px;
+  margin-top: 5.3%;
+  float: right;
+  font-family: "Proxima", sans-serif;
+  font-size: 20px;
+  color: #79addc;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=styles.css.map */
